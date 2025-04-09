@@ -23,7 +23,7 @@ body {
 }
 
 .card img {
-  border-radius: .5rem .5rem 0rem 0rem;
+  border-radius: .5rem 0rem 0rem .5rem;
 }
 
 .card-description {
