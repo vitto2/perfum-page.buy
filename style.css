@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2eae2;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  width: 37.5rem;
+  height: 28.5rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  display: flex;
+}
+
+.card img {
+  border-radius: .5rem .5rem 0rem 0rem;
+}
+
+.card-description {
+  width: 50%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-description h3 {
+  font-size: 0.75rem;
+  letter-spacing: 0.3125rem;
+  line-height: 120%;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #6c7289;
+}
+
+.card-description h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
+}
+
+.card-description p {
+  font-size: 0.875rem;
+  line-height: 160%;
+  letter-spacing: 0rem;
+  color: #6c7289;
+}
+
+.values {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.values .price-1 {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  line-height: 100%;
+  letter-spacing: 0rem;
+  color: #3d8168;
+  font-weight: bold;
+}
+
+.values .price-2 {
+  color: #6c7289;
+  text-decoration: line-through;
+}
+
+.button-payment {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  line-height: 110%;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  background-color: rgb(61, 129, 104);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  gap: 0.625rem;
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 30rem) {
+  .card {
+    flex-direction: column;
+    width: 21.875rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    height: auto;
+  }
+
+  .perfum-img {
+    height: 21.375rem;
+    object-fit: cover;
+  }
+
+  .button-payment {
+    width: 100%;
+  }
+}
